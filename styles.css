@@ -8,7 +8,7 @@
 
 body {
   height: 100vh;
-  background-color: rgb(255, 255, 172);
+  background-color: #ffb703;
   font-family: "Itim";
 }
 
@@ -18,14 +18,22 @@ h1 {
   font-size: 4rem;
   color:rgb(12, 12, 3);
   letter-spacing: 6px;
+}
 
+h3 {
+  position: absolute;
+  font-size: 4rem;
+  left: 40%;
+  bottom: 250px;
+  animation-name: slidein;
+  animation-duration: 1s;
 }
 
 span {
   cursor: pointer;
 }
 .container {
-  height: 100%;
+  height: 80%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -50,13 +58,73 @@ span {
   justify-content: center;
   align-items: center;
   font-size: 7rem;
-  color: #666;
+  color: black;
 }
 
 .cell {
-  background-color: rgba(0, 101, 252, 0.5);
+  background-color: #219ebc;
 }
 
 .cell:hover {
-  background-color: rgba(181, 52, 255, 0.4);
+  background-color: #8ecae6;
+
+}
+
+
+@keyframes slidein {
+  from {
+    margin-bottom: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+@media (max-width: 800px) {
+  .form {
+      display: none;
+  }
+
+  h1 {
+      font-size: 50px;
+      text-shadow: 2px 2px rgb(149, 189, 6);
+      color: black;
+    
+  }
+  
+  body {
+      border: 8px dotted rgb(117, 117, 4);
+  }
+
+  img {
+      display: none;
+  }
+
+
+  .container {
+      width: 400px;
+      height: 50%;
+  }
+
+  .cell {
+    width: 29%;
+  }
+
+  .tic {
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+  }
+
+  h3 {
+    position: absolute;
+    font-size: 2rem;
+    left: 40%;
+    bottom: 150px;
+    animation-name: slidein;
+    animation-duration: 1s;
+  }
+
+
 }
