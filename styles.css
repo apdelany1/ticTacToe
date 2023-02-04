@@ -1,10 +1,42 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-body {
-    height: 100vh;
-    background-color: beige;
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tic {
+  width: 40%;
+  height: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.cell {
+  width: 28%;
+  height: 33%;
+  border: 1px solid black;
+  margin: 1px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  font-family: cursive;
+  color: #666;
+}
+
+.cell {
+  background-color: rgba(0, 100, 255, 0.2);
+}
+
+.cell:hover {
+  background-color: rgba(255, 100, 0, 0.4);
 }
