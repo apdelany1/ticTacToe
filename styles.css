@@ -18,6 +18,7 @@ h1 {
   font-size: 4rem;
   color:purple;
   letter-spacing: 6px;
+  cursor: pointer;
 }
 .container {
   height: 100%;
@@ -38,7 +39,7 @@ h1 {
 .cell {
   width: 28%;
   height: 33%;
-  border: 1px solid black;
+  border: 3px solid black;
   margin: 3px;
   border-radius: 5px;
   display: flex;
