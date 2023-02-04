@@ -8,7 +8,7 @@
 
 body {
   height: 100vh;
-  background-color: rgb(255, 255, 215);
+  background-color: rgb(255, 255, 172);
   font-family: "Itim";
 }
 
@@ -16,8 +16,12 @@ h1 {
   text-align: center; 
   padding: 50px;
   font-size: 4rem;
-  color:purple;
+  color:rgb(12, 12, 3);
   letter-spacing: 6px;
+
+}
+
+span {
   cursor: pointer;
 }
 .container {
@@ -37,8 +41,8 @@ h1 {
 }
 
 .cell {
-  width: 28%;
-  height: 33%;
+  width: 32%;
+  height: 32%;
   border: 3px solid black;
   margin: 3px;
   border-radius: 5px;
@@ -50,9 +54,9 @@ h1 {
 }
 
 .cell {
-  background-color: rgba(0, 100, 255, 0.2);
+  background-color: rgba(0, 101, 252, 0.5);
 }
 
 .cell:hover {
-  background-color: rgba(255, 100, 0, 0.4);
+  background-color: rgba(181, 52, 255, 0.4);
 }
